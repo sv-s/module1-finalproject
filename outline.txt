@@ -29,7 +29,7 @@
         "start over"
         -volunteer
             "Welcome #{firstname}!"
-            "are you here to volunteer?"
+            "are you here to volunteer?" OR "clock out"
                 "clock in"
                     "organization name"
                     ### clocks in and goes to main volunteer page
@@ -46,6 +46,9 @@
 
         - organization
             "Welcome #{organization}!"
+            "Volunteer reviews"
+                "See my reviews"
+                "Leave a review"
             "View previous volunteer records"
             "update profile"
             "log out"
