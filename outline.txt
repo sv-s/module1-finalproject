@@ -29,26 +29,22 @@
         "start over"
         -volunteer
             "Welcome #{firstname}!"
-            "are you here to volunteer?" OR "clock out"
-                "clock in"
+            "are you here to volunteer?"
+                - clock in
                     "organization name"
                     ### clocks in and goes to main volunteer page
+                - (if clocked in:) "clock out"
+                    "leave a review"
                 "Find an organization near me"
                     "type a city:"
                         (if nothing found) "no organizations available for volunteer work"
                         ### output 5 organizations   
-            "Volunteer reviews"
-                "See my reviews"
-                "Leave a review"
             "View previous volunteer records"
             "update profile"
             "log out"
 
         - organization
             "Welcome #{organization}!"
-            "Volunteer reviews"
-                "See my reviews"
-                "Leave a review"
             "View previous volunteer records"
             "update profile"
             "log out"
